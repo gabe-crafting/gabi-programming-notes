@@ -1,0 +1,20 @@
+# Nuxt Docs Template
+
+> A template for building documentation with Nuxt UI and Nuxt Content.
+
+## Documentation Sets
+
+- [Nuxt Docs Template - Full Documentation](https://docs-template.nuxt.dev//llms-full.txt): This is the full documentation for the Nuxt Docs Template.
+
+## Getting Started
+
+- [Introduction](https://docs-template.nuxt.dev/getting-started): Welcome to Nuxt UI documentation template.
+- [Installation](https://docs-template.nuxt.dev/getting-started/installation): Get started with Nuxt UI documentation template.
+- [Usage](https://docs-template.nuxt.dev/getting-started/usage): Learn how to write and customize your documentation.
+
+## Essentials
+
+- [Markdown Syntax](https://docs-template.nuxt.dev/essentials/markdown-syntax): Text, title, and styling in standard markdown.
+- [Code Blocks](https://docs-template.nuxt.dev/essentials/code-blocks): Display inline code and code blocks
+- [Prose Components](https://docs-template.nuxt.dev/essentials/prose-components): Components to help you structure your content.
+- [Images and Embeds](https://docs-template.nuxt.dev/essentials/images-embeds): Add image, video, and other HTML elements
