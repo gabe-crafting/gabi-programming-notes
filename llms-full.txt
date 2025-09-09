@@ -1151,11 +1151,11 @@ Use `collapsible` to hide and reveal content sections. `collapsible` is ideal fo
 class: "[&>div]:*:w-full"
 ---
   :::collapsible
-  | Prop    | Default   | Type     |
-  | ------- | --------- | -------- |
-  | `name`  |           | `string` |
-  | `size`  | `md`      | `string` |
-  | `color` | `neutral` | `string` |
+  | Prop | Default | Type |
+  | ---- | ------- | ---- |
+  |      |         |      |
+  |      |         |      |
+  |      |         |      |
   :::
 
 #code
@@ -1239,9 +1239,6 @@ Use `field-group` to group related fields together in a list. `field-group` help
 Use `icon` to insert icons from icon libraries. Icons provide visual cues and enhance the user interface of your documentation.
 
 ::code-preview
-  :::icon{name="i-simple-icons-nuxtdotjs"}
-  :::
-
 #code
 ```mdc
 :icon{name="i-simple-icons-nuxtdotjs"}
@@ -1256,7 +1253,7 @@ Use `kbd` to display keyboard keys or shortcuts. `kbd` components clearly indica
 ---
 class: "[&>div]:*:my-0"
 ---
-``
+\`\`
 
 #code
 ```mdc
