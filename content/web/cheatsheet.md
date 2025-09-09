@@ -6,18 +6,20 @@ title: Cheatsheet
 
 ::card-group{.w-full}
   :::card
-   ## Testing
-    - Unit testing: Validate the behavior of function, classes, components, methods (Given an input, check if the output is expected)
-    - Integration testing
-    - End to end testing: Run your app in a simulated environment: Cypress
-    - acceptance testing: tests that ensure the software meets all the clients requirement
-    - system testing: Tests that work on required hardware/servers
-    - smoke testing: Most important tests first before the rest of the suit
-    - stress testing: capability of infrastructure
+  ## Testing
+  
+  - Unit testing: Validate the behavior of function, classes, components, methods (Given an input, check if the output is expected)
+  - Integration testing
+  - End to end testing: Run your app in a simulated environment: Cypress
+  - acceptance testing: tests that ensure the software meets all the clients requirement
+  - system testing: Tests that work on required hardware/servers
+  - smoke testing: Most important tests first before the rest of the suit
+  - stress testing: capability of infrastructure
   :::
 
   :::card
   ## Test driven development
+  
   - Have a pipeline that run the tests before making the commit
   - Write tests before start coding
   - Refactor -> Fail -> Pass -> Refactor (till all pass)
@@ -26,6 +28,7 @@ title: Cheatsheet
 
   :::card
   ## Integration testing
+  
   - Testing multiple units of code together.
   - Not just input and output. See if a function has been called the right way, as many time as needed with the correct parameters, the component has been mounted and so on
   - Ex: Component that takes data from a hook. Check if it displayed properly in the component
@@ -34,6 +37,7 @@ title: Cheatsheet
 
   :::card
   ## Jest
+  
   - [Mock functions](https://jestjs.io/docs/mock-function-api): function that you can pass as a callback to test other function. You can watch details about the callback. How many time it was run and what parameters where passed into it.
     - you can acces the watch method intel with `.mock` attribute ex `mockFn.mock.calls`, `mockFn.mock.results`
     - `spyOn` to also track the methods
@@ -47,7 +51,7 @@ title: Cheatsheet
 ::card-group{.w-full}
   :::card
   ## [Rest](https://developer.mozilla.org/en-US/docs/Glossary/REST)
-
+  
   Rest: A web arhitecture that is based on client sending a request and getting a response.Methods:
   
   - [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) retrieve data from server
@@ -59,13 +63,14 @@ title: Cheatsheet
 
   :::card
   ## Browser user data storage & database
+  
   - [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) ends when browser session ends
   - [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) no expiration time
   - [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) Any data about user that is stored in a session level (server side)
   
   Crud: all ways that you can operate a store data (used in databases): create, read, update, delete
   :::
-  
+
   :::card
   ## [Webhook](https://www.getvero.com/resources/webhooks/)
   
@@ -105,6 +110,7 @@ title: Cheatsheet
 
   :::card
   ## GraphQl
+  
   - Query language for APIs, Client's query for certain data, returns requested data in a JSON-like format
   - Allows clients to request specific data they need
   - Defined by a schema describing data types, fields, and relationships

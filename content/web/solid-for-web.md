@@ -1,6 +1,7 @@
-# SOLID for javascript, typescript, component frameworks
-
-An aproach to solid principles from a javascript perspective and it's aproach nowdays (including it's frameworks)
+---
+title: SOLID for javascript, typescript, component frameworks
+description: An aproach to solid principles from a javascript perspective and it's aproach nowdays (including it's frameworks)
+---
 
 - The Single Responsibility Principle
 - The Open-Closed Principle
