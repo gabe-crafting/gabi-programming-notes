@@ -1,48 +1,19 @@
 ---
 seo:
-  title: Nuxt Docs Template
-  description: Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
+  title: Gabi-Webdev-notes
+  description: Gabi-Webdev-notes
+title: Gabi-Webdev-notes
+description: Gabi-Webdev-notes
 ---
 
-::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
+::u-page-hero
 ---
+class: dark:bg-gradient-to-b from-neutral-900 to-neutral-950
 orientation: horizontal
 ---
-#top
-:hero-background
-
-#title
-Ship Beautiful [Documentation]{.text-primary}.
-
-#description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
-
-#links
-  :::u-button
-  ---
-  to: /getting-started
-  size: xl
-  trailing-icon: i-lucide-arrow-right
-  ---
-  Get started
-  :::
-
-  :::u-button
-  ---
-  icon: i-simple-icons-github
-  color: neutral
-  variant: outline
-  size: xl
-  to: https://github.com/nuxt-ui-templates/docs
-  target: _blank
-  ---
-  Use this template
-  :::
-
-#default
   :::prose-pre
   ---
-  code: |
+  code: |-
     export default defineNuxtConfig({
       modules: [
         '@nuxt/ui',
@@ -50,12 +21,11 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
         'nuxt-og-image',
         'nuxt-llms'
       ],
-
+  
       css: ['~/assets/css/main.css']
     })
   filename: nuxt.config.ts
   ---
-
   ```ts [nuxt.config.ts]
   export default defineNuxtConfig({
     modules: [
@@ -64,14 +34,49 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
       'nuxt-og-image',
       'nuxt-llms'
     ],
-
+  
     css: ['~/assets/css/main.css']
   })
   ```
   :::
+
+#top
+  :::hero-background
+  :::
+
+#title
+Ship Beautiful [Documentation]{.text-primary} .
+
+#description
+Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
+
+#links
+  :::u-button
+  ---
+  size: xl
+  to: /getting-started
+  trailing-icon: i-lucide-arrow-right
+  ---
+  Get started
+  :::
+
+  :::u-button
+  ---
+  color: neutral
+  icon: i-simple-icons-github
+  size: xl
+  target: _blank
+  to: https://github.com/nuxt-ui-templates/docs
+  variant: outline
+  ---
+  Use this template
+  :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Powered by Nuxt UI components
 
@@ -95,7 +100,7 @@ Powered by Nuxt UI components
   ---
   #title
   100+ UI Components
-
+  
   #description
   Access the complete Nuxt UI component library. From badges to modals, everything styled and accessible out of the box.
   :::
@@ -106,7 +111,7 @@ Powered by Nuxt UI components
   ---
   #title
   Beautiful Typography
-
+  
   #description
   Pre-styled prose components with perfect visual harmony. No need for @tailwindcss/typography - get precise control over every element.
   :::
@@ -117,7 +122,7 @@ Powered by Nuxt UI components
   ---
   #title
   Rich Prose Components
-
+  
   #description
   Accordions, cards, callouts, tabs, steps, code blocks, and more - all provided by Nuxt UI for interactive documentation.
   :::
@@ -128,7 +133,7 @@ Powered by Nuxt UI components
   ---
   #title
   Built-in Search
-
+  
   #description
   Full-text search with ContentSearch component. No need for Algolia - instant, relevant results with keyboard shortcuts (⌘K).
   :::
@@ -139,7 +144,7 @@ Powered by Nuxt UI components
   ---
   #title
   Smart Navigation
-
+  
   #description
   Auto-generated navigation with ContentNavigation and ContentToc components. Sticky table of contents and prev/next links.
   :::
@@ -150,13 +155,16 @@ Powered by Nuxt UI components
   ---
   #title
   Dark Mode Ready
-
+  
   #description
   Automatic theme switching with smooth transitions. Respects system preferences and remembers user choice.
   :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Enhanced with Nuxt Content
 
@@ -180,7 +188,7 @@ Enhanced with Nuxt Content
   ---
   #title
   MDC Enhanced Markdown
-
+  
   #description
   Write in Markdown while embedding Vue components. Seamlessly integrate interactive elements in your content.
   :::
@@ -191,7 +199,7 @@ Enhanced with Nuxt Content
   ---
   #title
   File-based Routing
-
+  
   #description
   Organize content in folders and files. Your documentation structure automatically becomes your navigation.
   :::
@@ -202,7 +210,7 @@ Enhanced with Nuxt Content
   ---
   #title
   Syntax Highlighting
-
+  
   #description
   Beautiful code blocks with language detection, line numbers, and copy buttons. Support for 100+ languages.
   :::
@@ -213,7 +221,7 @@ Enhanced with Nuxt Content
   ---
   #title
   Content Database
-
+  
   #description
   Query your content with a MongoDB-like API. Filter, sort, and search through your documentation programmatically.
   :::
@@ -224,7 +232,7 @@ Enhanced with Nuxt Content
   ---
   #title
   Frontmatter Support
-
+  
   #description
   Add metadata to your content files. Define SEO tags, navigation properties, and custom fields.
   :::
@@ -235,29 +243,30 @@ Enhanced with Nuxt Content
   ---
   #title
   Version Control
-
+  
   #description
   Content lives in your repository. Branch, review, and deploy documentation alongside your code.
   :::
 ::
 
-::u-page-section{class="dark:bg-gradient-to-b from-neutral-950 to-neutral-900"}
+::u-page-section{.dark:bg-gradient-to-b.from-neutral-950.to-neutral-900}
   :::u-page-c-t-a
   ---
   links:
     - label: Start building
-      to: '/getting-started'
+      to: /getting-started
       trailingIcon: i-lucide-arrow-right
     - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/docs'
+      to: https://github.com/nuxt-ui-templates/docs
       target: _blank
       variant: subtle
       icon: i-simple-icons-github
-  title: Ready to build an amazing documentation?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
   class: dark:bg-neutral-950
+  description: Join thousands of developers building with Nuxt and Nuxt UI. Get
+    this template and start shipping today.
+  title: Ready to build an amazing documentation?
   ---
-
-  :stars-bg
+    ::::stars-bg
+    ::::
   :::
 ::
