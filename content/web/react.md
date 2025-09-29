@@ -43,7 +43,7 @@ const [error, submitAction, isPending] = useActionState(
 
 ### [useFormStatus](https://react.dev/reference/react-dom/hooks/useFormStatus)
 
-status information of the last form submission. For custom submit buttons
+status information of the last form submission. For custom submit buttons for example or act on a custom input.
 
 ```tsx
 const { pending, data, method, action } = useFormStatus();
@@ -65,3 +65,7 @@ function AppContainer() {
   );
 }
 ```
+
+### [use](https://react.dev/reference/react/use)
+Lets you read the value of a resource like a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or [context](https://react.dev/learn/passing-data-deeply-with-context).
+
