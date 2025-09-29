@@ -4,11 +4,21 @@ title: React cheatsheet
 description: ""
 ---
 
-# React 19
+## React 19
 
-## Actions
+**Actions**: functions that use async transitions are called “Actions”.
 
-functions that use async transitions are called “Actions”
+## New stuff
+
+- You can now pass a ref as props without forwardRef
+
+## SSR, client side and more
+
+- Added support for server components
+- Added support for [metadata](https://react.dev/blog/2024/12/05/react-19#support-for-metadata-tags) in non client apps
+- Added string methods for serving html for SSR simpler to optimize NEXT
+
+## Hooks
 
 ### useTransition
 
@@ -50,7 +60,9 @@ const { pending, data, method, action } = useFormStatus();
 ```
 
 ### [useOptimistic](https://react.dev/reference/react/useOptimistic)
+
 useOptimistic is a React Hook that lets you show a different state while an async action is underway.
+
 ```tsx
 import { useOptimistic } from 'react';
 
@@ -67,5 +79,16 @@ function AppContainer() {
 ```
 
 ### [use](https://react.dev/reference/react/use)
+
 Lets you read the value of a resource like a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or [context](https://react.dev/learn/passing-data-deeply-with-context).
 
+```tsx
+const message = use(messagePromise);
+const theme = use(ThemeContext);
+```
+
+##
+
+## React libraries
+
+[React helment](https://github.com/nfl/react-helmet) - Library for adding metadata
