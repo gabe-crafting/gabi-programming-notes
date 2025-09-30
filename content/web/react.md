@@ -8,15 +8,17 @@ description: ""
 
 **Actions**: functions that use async transitions are called “Actions”.
 
-## New stuff
+### New stuff
 
 - You can now pass a ref as props without forwardRef
+- Using actions optimize the rendering process 
 
-## SSR, client side and more
+### SSR, client side and more
 
 - Added support for server components
 - Added support for [metadata](https://react.dev/blog/2024/12/05/react-19#support-for-metadata-tags) in non client apps
 - Added string methods for serving html for SSR simpler to optimize NEXT
+(`renderToString` and `renderToPipeableStream`)
 
 ## Hooks
 
