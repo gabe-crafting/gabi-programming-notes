@@ -11,18 +11,18 @@ description: ""
 ### New stuff
 
 - You can now pass a ref as props without forwardRef
-- Using actions optimize the rendering process 
+- Using actions optimize the rendering process
 
 ### SSR, client side and more
 
 - Added support for server components
 - Added support for [metadata](https://react.dev/blog/2024/12/05/react-19#support-for-metadata-tags) in non client apps
 - Added string methods for serving html for SSR simpler to optimize NEXT
-(`renderToString` and `renderToPipeableStream`)
+  (`renderToString` and `renderToPipeableStream`)
 
 ## Hooks
 
-### useTransition
+### [useTransition](https://react.dev/reference/react/useTransition)
 
 While function from within is executed, isPending is true.
 
@@ -32,7 +32,7 @@ const [isPending, startTransition] = useTransition();
 startTransition(async() => { /* some code */ })
 ```
 
-### useActionState
+### [useActionState](https://react.dev/reference/react/useActionState)
 
 ```tsx
 const [error, submitAction, isPending] = useActionState(
