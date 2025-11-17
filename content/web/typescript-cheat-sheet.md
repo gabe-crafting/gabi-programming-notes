@@ -4,11 +4,13 @@ title: Typescript
 navigation:
   icon: i-nonicons-typescript-16
 ---
+
 ## Fundamentals
 
 ::card-group{.w-full}
   :::card
   ### Basic primitive types
+  
   ```ts
   let str: string = "hello"
   let num: number = 42
@@ -24,13 +26,16 @@ navigation:
 
   :::card
   ### Type inference and assertions
+  
   ```ts
   let x = 5                 // inferred as number
   let y = x as number       // assertion (force treat as number)
   let z = <string>"text"    // JSX-incompatible assertion syntax
   let safe = maybeValue!    // non-null assertion (trust it's not null)
   ```
-   ### Unions & Intersections, literal types
+  
+  ### Unions & Intersections, literal types
+  
   ```ts
   type Status = "success" | "error" | "loading" // literal union
   type User = { name: string; age?: number }
@@ -40,14 +45,14 @@ navigation:
 
   :::card
   ### Function typing
-
+  
   ```ts
   function add(a: number, b: number): number {
     return a + b
   }
-
+  
   const log = (msg: string): void => console.log(msg) // no return value
-
+  
   // Function overloads for multiple input types
   function overload(a: string): string
   function overload(a: number): number
@@ -57,6 +62,7 @@ navigation:
 
   :::card
   ### Enums
+  
   ```ts
     enum Direction { // numeric enum (auto-incremented)
     Up, // 0
@@ -64,7 +70,7 @@ navigation:
     Left = 10, // explicit value
     Right // 11
   }
-
+  
   enum Color { // string enum
     Red = "RED",
     Green = "GREEN",
@@ -75,7 +81,9 @@ navigation:
 ::
 
 ## Advanced Type System
+
 Key points
+
 - Generics + keyof/extends = flexible, type-safe APIs.
 - Conditional + infer = extract pieces of types.
 - Utility types reduce boilerplate; build your own when needed.
@@ -107,10 +115,14 @@ Key points
   type EventName<T extends string> = `${T}Changed`    // template literal type
 
 ```
+
 ## Type Narrowing & Guards
+
 Key points
+
 - Use discriminants (literal kind fields) for exhaustive checks.
 - Custom predicates help narrow complex types.
+
 ```ts
 // --- Primitive guards
 function format(v: string | number) {
@@ -140,6 +152,3 @@ function area(s: Shape) {
   }
 }
 ```
-
-
-

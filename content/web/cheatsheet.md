@@ -31,13 +31,11 @@ links: []
   ## BDD (Behavior-Driven Development)
   
   Goal: Bridge the gap between business, development, and QA by using a common language.
-
+  
   Focus: Define system behavior through examples (scenarios) written in natural language.
-
+  
   1. Discovery: Collaborate with stakeholders to identify features and behaviors.
-
   2. Formulation: Write behaviors as scenarios (Gherkin syntax).
-
   3. Automation: Automate those scenarios as acceptance tests.
   :::
 
